@@ -1,0 +1,5 @@
+/* ...existing code... */
+.container {
+  position: relative; /* Ensure the container has a non-static position */
+}
+/* ...existing code... */
