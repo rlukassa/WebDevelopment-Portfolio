@@ -2,6 +2,56 @@
 
 .navbar {
   height: 100px;
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  color: lightgray;
+  overflow-x: hidden;
+  width: 100%;
+  // warna text
+  // display : flex;
+  // justify-content : center;
+  // align-items : center;
+  // flex-direction : column;
+  // text-align : center;
+  // scroll-snap-align : center;
+  // mengatur posisi elemen agar berada di tengah
+
+  --s: 37px; /* control the size */
+
+  --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+  --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+  --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+  --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+  background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+    var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+    var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+  background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+
+  background-color: #111111;
+  background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+
   .wrapper {
     position : relative;
     left : 150px;
@@ -15,6 +65,7 @@
     height: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 30px;
+    ;
 
     @include mobile {
       justify-content: flex-end;
@@ -52,7 +103,7 @@
         background: white;
         margin: 5px;
         transition: 0.3s;
-        justify-content: center;
+        justify-content: center;;
       }
 
       .social-btn svg {

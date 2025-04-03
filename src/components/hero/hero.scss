@@ -41,10 +41,11 @@
 
       h2 {
         font-size: 30px;
-        color: rgba(154, 24, 210, 0.748);
+        color: rgba(186, 87, 244, 0.748);
         letter-spacing: 10px;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
+        text-decoration: #00ffff;
         text-shadow: 2px 0px 5px rgba(255, 255, 255, 0.718),
           0 0 20px rgba(255, 255, 255, 0.247),
           0 0 30px rgba(255, 255, 255, 0.038),
@@ -53,6 +54,7 @@
 
         @include mobile {
           margin-top: 100px;
+          font-size: 26px;
         }
       }
 
