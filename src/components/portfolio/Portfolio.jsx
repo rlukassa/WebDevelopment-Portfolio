@@ -11,25 +11,25 @@ const items = [
     id: 1,
     title:
       "Finalist - AI4IMPACT Career Scholarship 3.0 for Internship Terra AI Singapore (2023)",
-    img: ["../../../public/sertif1.png"],
+    img: ["public/sertif1.png"],
     desc: "Out of 15,000 participants, I was included in the 500 participants who passed the final selection of AI4IMPACT career scholarships. In the last selection, I built a Chatbot and did another Algorithm test with the Python programming language.",
   },
   {
     id: 2,
     title: "Ex-Member of Google Developer Student Club ITB (2023 - 2024)",
-    img: ["../../../public/sertif2.jpg"],
+    img: ["public/sertif2.jpg"],
     desc: "I was an active member of the Google Developer Student Club ITB (2023 - 2024), where I had the opportunity to deepen my technical skills through various activities and workshops. One of the highlights was participating in the iCCom Class on Cloud #3, which focused on CI/CD on Google Cloud. Although the class primarily covered concepts of continuous integration and continuous deployment, I was particularly engaged in the Machine Learning segment. During this experience, I enhanced my ability to build and deploy ML models within cloud environments, gaining valuable insights into leveraging cloud infrastructure for scalable and efficient data processing.",
   },
   {
     id: 3,
     title: "ModelMorphosis: My First Web Development Competition Experience",
-    img: ["../../public/web1.png"],
+    img: ["public/web1.png"],
     desc: "ModelMorphosis is a web project I built for the Web Development Competition held by Universitas Atma Jaya Yogyakarta. As my first experience in web development competitions, it was both challenging and insightful. The project utilized a modern tech stack, including React JSX, Node.js, AOS, Swiper, and Accordion, and was designed to be fully mobile responsive. Although I didn’t make it to the finals, this experience ignited my passion for web development, motivating me to continue honing my skills and pursuing more competitions in the future.",
   },
   {
     id: 4,
     title: "Beyond Coding: Representing Renewable Energy Innovations",
-    img: ["../../../public/pertamina1.jpg"],
+    img: ["public/pertamina1.jpg"],
     desc: "As an Informatics student, my journey extends beyond coding and working behind a screen. I also had the privilege of representing the Pertamina Sobat Bumi Scholarship program to the University of Twente, Netherlands. During this opportunity, I introduced our project on photovoltaic systems and biogas schemes as part of the Desa Energi Berdikari initiative. This experience not only enhanced my communication skills but also deepened my passion for sustainable energy solutions.",
   },
 ];
@@ -69,7 +69,7 @@ const Single = ({ item }) => {
                   window.open("https://drive.google.com/file/d/1uSEYvrTqr7sZ1z4UdTDJvD57c7vBYOic/view?usp=drive_link", "_blank")
                 }
               >
-                View Certifications
+                View Certificate
               </button>
             ) : item.id === 2 ? (
               <button
@@ -77,7 +77,7 @@ const Single = ({ item }) => {
                   window.open("https://drive.google.com/file/d/1_6-vFZhTFc58rM0R8BOZ8SrLAMTESgT4/view?usp=drive_link", "_blank")
                 }
               >
-                View Certifications
+                View Certificate
               </button>
             ) : item.id === 3 ? (
               <>

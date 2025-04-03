@@ -25,27 +25,27 @@ const variants = {
 
 const techStackLogos = [
   { src: "public/html.svg", name: "HTML" },
-  { src: "../../public/css.svg", name: "CSS" },
-  { src: "../../public/js.svg", name: "JavaScript" },
-  { src: "../../public/react-native.svg", name: "React" },
-  { src: "../../public/react.svg", name: "React Native" },
-  { src: "../../public/threejs.svg", name: "Three.js" },
-  { src: "../../public/nodejs.svg", name: "Node.js" },
-  { src: "../../public/expressjs.svg", name: "Express.js" },
-  { src: "../../public/django.svg", name: "Django" },
-  { src: "../../public/php.svg", name: "php" },
-  { src: "../../public/mongodb.svg", name: "MongoDB" },
-  { src: "../../public/mysql.svg", name: "MySQL" },
-  { src: "../../public/mariadb.svg", name: "MariaDB" },
-  { src: "../../public/firebase.svg", name: "Firebase" },
-  { src: "../../public/matplotlib.svg", name: "Matplotlib" },
-  { src: "../../public/python.svg", name: "Python" },
-  { src: "../../public/c.svg", name: "C" },
-  { src: "../../public/cpp.svg", name: "C++" },
-  { src: "../../public/csharp.svg", name: "C#" },
-  { src: "../../public/java.svg", name: "Java" },
-  { src: "../../public/prolog.svg", name: "Prolog" },
-  { src: "../../public/haskell.svg", name: "Haskell" },
+  { src: "public/css.svg", name: "CSS" },
+  { src: "public/js.svg", name: "JavaScript" },
+  { src: "public/react-native.svg", name: "React" },
+  { src: "public/react.svg", name: "React Native" },
+  { src: "public/threejs.svg", name: "Three.js" },
+  { src: "public/nodejs.svg", name: "Node.js" },
+  { src: "public/expressjs.svg", name: "Express.js" },
+  { src: "public/django.svg", name: "Django" },
+  { src: "public/php.svg", name: "php" },
+  { src: "public/mongodb.svg", name: "MongoDB" },
+  { src: "public/mysql.svg", name: "MySQL" },
+  { src: "public/mariadb.svg", name: "MariaDB" },
+  { src: "public/firebase.svg", name: "Firebase" },
+  { src: "public/matplotlib.svg", name: "Matplotlib" },
+  { src: "public/python.svg", name: "Python" },
+  { src: "public/c.svg", name: "C" },
+  { src: "public/cpp.svg", name: "C++" },
+  { src: "public/csharp.svg", name: "C#" },
+  { src: "public/java.svg", name: "Java" },
+  { src: "public/prolog.svg", name: "Prolog" },
+  { src: "public/haskell.svg", name: "Haskell" },
 ];
 
 const Services = () => {
@@ -68,7 +68,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="/service.png" alt="" />
+          <img src="public/service.png" alt="" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Get to </motion.b>know
           </h1>
