@@ -24,28 +24,28 @@ const variants = {
 };
 
 const techStackLogos = [
-  { src: "public/html.svg", name: "HTML" },
-  { src: "public/css.svg", name: "CSS" },
-  { src: "public/js.svg", name: "JavaScript" },
-  { src: "public/react-native.svg", name: "React" },
-  { src: "public/react.svg", name: "React Native" },
-  { src: "public/threejs.svg", name: "Three.js" },
-  { src: "public/nodejs.svg", name: "Node.js" },
-  { src: "public/expressjs.svg", name: "Express.js" },
-  { src: "public/django.svg", name: "Django" },
-  { src: "public/php.svg", name: "php" },
-  { src: "public/mongodb.svg", name: "MongoDB" },
-  { src: "public/mysql.svg", name: "MySQL" },
-  { src: "public/mariadb.svg", name: "MariaDB" },
-  { src: "public/firebase.svg", name: "Firebase" },
-  { src: "public/matplotlib.svg", name: "Matplotlib" },
-  { src: "public/python.svg", name: "Python" },
-  { src: "public/c.svg", name: "C" },
-  { src: "public/cpp.svg", name: "C++" },
-  { src: "public/csharp.svg", name: "C#" },
-  { src: "public/java.svg", name: "Java" },
-  { src: "public/prolog.svg", name: "Prolog" },
-  { src: "public/haskell.svg", name: "Haskell" },
+  { src: "html.svg", name: "HTML" },
+  { src: "css.svg", name: "CSS" },
+  { src: "js.svg", name: "JavaScript" },
+  { src: "react-native.svg", name: "React" },
+  { src: "react.svg", name: "React Native" },
+  { src: "threejs.svg", name: "Three.js" },
+  { src: "nodejs.svg", name: "Node.js" },
+  { src: "expressjs.svg", name: "Express.js" },
+  { src: "django.svg", name: "Django" },
+  { src: "php.svg", name: "php" },
+  { src: "mongodb.svg", name: "MongoDB" },
+  { src: "mysql.svg", name: "MySQL" },
+  { src: "mariadb.svg", name: "MariaDB" },
+  { src: "firebase.svg", name: "Firebase" },
+  { src: "matplotlib.svg", name: "Matplotlib" },
+  { src: "python.svg", name: "Python" },
+  { src: "c.svg", name: "C" },
+  { src: "cpp.svg", name: "C++" },
+  { src: "csharp.svg", name: "C#" },
+  { src: "java.svg", name: "Java" },
+  { src: "prolog.svg", name: "Prolog" },
+  { src: "haskell.svg", name: "Haskell" },
 ];
 
 const Services = () => {
@@ -68,7 +68,7 @@ const Services = () => {
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
-          <img src="public/service.png" alt="" />
+          <img src="service.png" alt="" />
           <h1>
             <motion.b whileHover={{ color: "orange" }}>Get to </motion.b>know
           </h1>

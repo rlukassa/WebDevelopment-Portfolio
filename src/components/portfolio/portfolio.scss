@@ -232,10 +232,11 @@
         h2 {
           /* Additional styles for long titles */
           display: -webkit-box;
-          -webkit-line-clamp: 3; /* Show only 3 lines initially */
+          line-clamp: 3; /* Show only 3 lines initially */
           -webkit-box-orient: vertical;
           overflow: visible; /* Allow overflow */
           text-overflow: ellipsis;
+
         }
       }
     }

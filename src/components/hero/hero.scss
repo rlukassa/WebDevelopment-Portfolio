@@ -100,7 +100,13 @@
             transform: scale(0.95);
             background: linear-gradient(90deg, #00ffff, #ff00ff);
             color: white;
+            
           }
+        }
+
+        @include mobile {
+          padding: 10px 20px;
+          font-size: 14px;
         }
       }
 

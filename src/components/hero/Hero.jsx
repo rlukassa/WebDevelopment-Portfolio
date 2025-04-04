@@ -56,7 +56,7 @@ const Hero = () => {
   };
 
   const items = [
-    { label: "See the Latest Works", route: "/#Portfolio" },
+    { label: "View Showcase Creations", route: "/#Portfolio" },
     { label: "Contact Me", route: "/#Contact" },
   ];
 
@@ -95,7 +95,7 @@ const Hero = () => {
             ))}
           </motion.div>
           <motion.img
-            src="public/scroll.png"
+            src="scroll.png"
             alt=""
             animate="scrollButton"
             variants={textVariants}
@@ -112,7 +112,7 @@ const Hero = () => {
           an IT Enthusiast @ Informatics, STEI ITB 2023
         </motion.div>
         <div className="imageContainer">
-          <img src="public/hero.png" alt="" />
+          <img src="hero.png" alt="" />
         </div>
       </div>
     </div>
