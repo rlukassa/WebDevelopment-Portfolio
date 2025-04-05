@@ -37,13 +37,14 @@ const items = [
 const Single = ({ item }) => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const rawY = useTransform(scrollYProgress, [0, 1], [-100, 100]); // Kurangi range transformasi
+  const y = useSpring(rawY, { stiffness: 50, damping: 20 }); // Tambahkan spring untuk animasi halus
 
   return (
-    <section>
+    <section ref={ref}>
       <div className="container">
         <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
+          <div className="imageContainer">
             {item.img.length > 1 ? (
               <Swiper
                 modules={[Autoplay]}
@@ -60,13 +61,19 @@ const Single = ({ item }) => {
               <img src={item.img[0]} alt="" />
             )}
           </div>
-          <motion.div className="textContainer" style={{ y }}>
+          <motion.div
+            className="textContainer"
+            style={{ y, willChange: "transform" }} // Tambahkan will-change
+          >
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             {item.id === 1 ? (
               <button
                 onClick={() =>
-                  window.open("https://drive.google.com/file/d/1uSEYvrTqr7sZ1z4UdTDJvD57c7vBYOic/view?usp=drive_link", "_blank")
+                  window.open(
+                    "https://drive.google.com/file/d/1uSEYvrTqr7sZ1z4UdTDJvD57c7vBYOic/view?usp=drive_link",
+                    "_blank"
+                  )
                 }
               >
                 View Certificate
@@ -74,7 +81,10 @@ const Single = ({ item }) => {
             ) : item.id === 2 ? (
               <button
                 onClick={() =>
-                  window.open("https://drive.google.com/file/d/1_6-vFZhTFc58rM0R8BOZ8SrLAMTESgT4/view?usp=drive_link", "_blank")
+                  window.open(
+                    "https://drive.google.com/file/d/1_6-vFZhTFc58rM0R8BOZ8SrLAMTESgT4/view?usp=drive_link",
+                    "_blank"
+                  )
                 }
               >
                 View Certificate
@@ -82,12 +92,22 @@ const Single = ({ item }) => {
             ) : item.id === 3 ? (
               <>
                 <button
-                  onClick={() => window.open("https://rlukassa.github.io/IFest-13_WDC_ModelMorphosis_Institut-Teknologi-Bandung/", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://rlukassa.github.io/IFest-13_WDC_ModelMorphosis_Institut-Teknologi-Bandung/",
+                      "_blank"
+                    )
+                  }
                 >
                   View Demo
                 </button>
                 <button
-                  onClick={() => window.open("https://github.com/rlukassa/IFest-13_WDC_ModelMorphosis_Institut-Teknologi-Bandung", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/rlukassa/IFest-13_WDC_ModelMorphosis_Institut-Teknologi-Bandung",
+                      "_blank"
+                    )
+                  }
                 >
                   View Repository
                 </button>
@@ -95,7 +115,10 @@ const Single = ({ item }) => {
             ) : item.id === 4 ? (
               <button
                 onClick={() =>
-                  window.open("https://drive.google.com/drive/folders/1Fv40SsAWlfpbDSb1NmSbYCUcUL38Sh4G?usp=drive_link", "_blank")
+                  window.open(
+                    "https://drive.google.com/drive/folders/1Fv40SsAWlfpbDSb1NmSbYCUcUL38Sh4G?usp=drive_link",
+                    "_blank"
+                  )
                 }
               >
                 View Other Documentation
@@ -116,7 +139,6 @@ const Portfolio = () => {
   });
   const scaleX = useSpring(scrollYProgress, {
     restDelta: 0.01,
-    duration: 0.5,
     stiffness: 100,
     damping: 30,
   });

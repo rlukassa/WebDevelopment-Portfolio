@@ -4,46 +4,35 @@
   position: relative;
   padding: 50px 0;
   overflow: visible;
-  min-height: 200vh; /* Set a minimum height to ensure the progress bar is visible */
-
-  section {
-    margin-bottom: 50px; /* Add spacing between portfolio items */
-  }
+  min-height: 300vh; // Pastikan tinggi minimum cukup untuk sticky
 
   .progress {
-    position: sticky;
-    top: 0;
+    position: sticky; // Sticky behavior
+    top: 0; // Tetap di atas saat scroll
     left: 0;
-    z-index: 100; /* Supaya tetap di atas */
-    padding-top: 50px;
+    z-index: 100;
+    padding: 20px 0;
     text-align: center;
     color: orange;
     font-size: 36px;
-    padding-bottom: 50px;
     background: rgba(0, 0, 0, 0.8);
 
     h1 {
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Lucida Sans", sans-serif;
       font-size: 55px;
 
       @include mobile {
         font-size: 40px;
       }
     }
-    /* Kasih background biar terlihat */
-
-    @include mobile {
-      padding-top: 25px;
-      font-size: 36px;
-    }
 
     .progressBar {
       height: 10px;
       background: white;
-      position: sticky;
+      will-change: transform; // Tambahkan will-change untuk performa
     }
   }
+
 
   .container {
     display: flex;
