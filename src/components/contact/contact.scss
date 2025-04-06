@@ -356,3 +356,17 @@ textarea.infos {
     color: #ffffff;
   }
 }
+
+@media (min-width: 560px) and (max-width: 740px) {
+  .contact {
+    padding: 0 40px;
+
+    .form {
+      padding: 30px;
+    }
+
+    .headerContainer {
+      padding: 30px;
+    }
+  }
+}

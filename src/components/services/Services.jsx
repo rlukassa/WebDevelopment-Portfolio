@@ -103,15 +103,7 @@ const Services = () => {
               whileHover={{ background: "lightgray", color: "black" }}
             >
               <h2>(S1) Informatics - Undergraduated STEI ITB 2023</h2>
-              <p>
-                A student from the School of Electrical Engineering and
-                Informatics – Computing who participates in various
-                organizations, often contributes to various events and enjoys
-                seeking new experiences in the field of Programming, Editing,
-                and Typing on computers as well as other experiences that
-                involve public speaking and critical thinking, so often trusted
-                to take part in the formation of events and various purposes.
-              </p>
+              <p> From the School of Electrical Engineering and Informatics – Computing, Bandung Institute of Technology. Experienced in programming, digital content creation, and organizing impactful events. Passionate about applying technology and communication to solve real-world problems.              </p>
               <button
                 onClick={() =>
                   window.open("https://drive.google.com/file/d/1RzGLvTCBcpYbtz-Co-q5l8EP-0CtOuyk/view?usp=sharing", "_blank")
